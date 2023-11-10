@@ -14,3 +14,9 @@ Pour pallier à ce problème, MatchMyGame propose aux utilisateurs de chercher d
 ## Objectif du projet
 
 Nous voulons pouvoir créer un compte et renseigner notre pseudonyme, notre Discord et y mettre nos jeux auxquels nous jouons. Nous voulons pouvoir lier les comptes de nos jeux à l'application. Pour le matching, nous voulons pouvoir filtrer la recherche en fonction du jeu. Une fois la recherche effectuée, nous voulons avoir une liste des joueurs correspondant aux critères demandés. Lorsque nous avons choisi la personne qui nous intéresse, nous voulons pouvoir lui proposer de jouer avec nous et pouvoir accepter une proposition. Une fois une proposition acceptée, afficher le Discord de la personne.
+
+
+
+
+
+tuto
