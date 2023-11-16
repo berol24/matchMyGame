@@ -1,5 +1,6 @@
 # Utilisation d'une image Laravel Sail (vous pouvez personnaliser cela en fonction de vos besoins)
 FROM sail-8.2/app
+RUN sudo groupadd --force -g $WWWGROUP sail
 
 # Copier le code source de Laravel dans le conteneur
 COPY ./src /var/www/html
