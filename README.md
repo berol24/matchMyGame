@@ -24,3 +24,10 @@ Nous avons opté pour Laravel en tant que framework côté serveur, en raison de
 Nous collaborons sur un référentiel GitHub, où le travail est organisé en deux parties distinctes : un projet pour le frontend et un autre pour le backend. De manière logique, nous avons créé une branche distincte pour chaque projet. À partir de là, nous utilisons l'une ou l'autre comme base pour créer des branches supplémentaires dédiées à des tâches spécifiques. Cette approche nous permet de créer des pull requests pour chaque tâche individuelle, puis de fusionner l'ensemble dans la branche principale (main) à la fin du processus. Nous gérons les conflits un par un à chaque pull request pour assurer une intégration harmonieuse.
 
 ## Comment lancer le projet
+Pour faire fonctionner le projet il faut lancer la la fois le server vue et celui de laravel. Pour ça il faut lancer unepremière comande pour vuejs dans le dossier corepondant
+
+    npm run dev
+
+puis le serveur de laravel dans un nouveau terminal : 
+
+    php atisan serve
