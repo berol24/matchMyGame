@@ -3,9 +3,9 @@
 ## Table des matières
 
 - [Présentation du produit](#présentation-du-produit)
-- [Objectif du projet](#objectif-du-projet)
-- [Fonctionnalités principales](#fonctionnalités-du-projet)
-- [Contraintes techniques](#contraintes-publiques)
+- [Objectif du projet](#présentation-du-produit)
+- [Fonctionnalités principales](#fonctionnalités-principales)
+- [Contraintes techniques](#contraintes-techniques)
 
 ## Introduction
 1) Contexte
