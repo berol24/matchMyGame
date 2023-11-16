@@ -4,13 +4,51 @@
 
 - [Présentation du produit](#présentation-du-produit)
 - [Objectif du projet](#objectif-du-projet)
+- [Fonctionnalités principales](#fonctionnalités-du-projet)
+- [Contraintes techniques](#contraintes-publiques)
+
+## Introduction
+1) Contexte
+MatchMyGame est une application web visant à faciliter la recherche de partenaires de jeu pour des sessions multijoueurs. Le projet a pour objectif de résoudre le problème des équipes aléatoires en permettant aux utilisateurs de choisir leurs partenaires en fonction de leurs préférences et statistiques de jeu.
+
+2) Objectif
+Le but de ce document est de définir les spécifications et les fonctionnalités nécessaires à la réalisation de l'application MatchMyGame.
 
 ## Présentation du produit
+MatchMyGame permettra aux utilisateurs de créer un compte, de renseigner des informations telles que leur pseudonyme, leur Discord et les jeux auxquels ils jouent. L'application offrira également la possibilité de lier les comptes de jeux à la plateforme pour une meilleure expérience utilisateur.
 
-MatchMyGame est une application web qui a pour cible toutes personnes cherchant des partenaires pour jouer à des jeux multi-joueurs. Lorsqu'un joueur lance une partie, le jeu crée des équipes aléatoires, ce qui peut désavantager un joueur qui a pour objectif de monter de rang.
+### Fonctionnalités principales
+1) Création de compte
+Les utilisateurs pourront créer un compte en fournissant les informations suivantes :
 
-Pour pallier à ce problème, MatchMyGame propose aux utilisateurs de chercher des partenaires de jeu qui sont connectés et qui cherchent eux aussi un partenaire. Ils auront accès aux statistiques de la personne afin de savoir s'ils veulent jouer ensemble ou non.
+Pseudonyme
+Adresse Discord
+Liste des jeux auxquels ils jouent
 
-## Objectif du projet
+2) Liaison des comptes de jeux
+MatchMyGame permettra aux utilisateurs de lier leurs comptes de jeux à l'application pour obtenir des statistiques pertinentes.
 
-Nous voulons pouvoir créer un compte et renseigner notre pseudonyme, notre Discord et y mettre nos jeux auxquels nous jouons. Nous voulons pouvoir lier les comptes de nos jeux à l'application. Pour le matching, nous voulons pouvoir filtrer la recherche en fonction du jeu. Une fois la recherche effectuée, nous voulons avoir une liste des joueurs correspondant aux critères demandés. Lorsque nous avons choisi la personne qui nous intéresse, nous voulons pouvoir lui proposer de jouer avec nous et pouvoir accepter une proposition. Une fois une proposition acceptée, afficher le Discord de la personne.
+3) Filtrage de la recherche
+Les utilisateurs pourront rechercher des partenaires en filtrant par jeu. La recherche devra retourner une liste de joueurs correspondant aux critères spécifiés.
+
+4) Proposition de jeu
+Les utilisateurs auront la possibilité de proposer à d'autres joueurs de rejoindre une partie. Cette proposition inclura les détails du jeu et permettra à l'autre utilisateur d'accepter ou de refuser.
+
+5) Affichage du Discord
+Une fois qu'une proposition est acceptée, l'application affichera le Discord de l'utilisateur choisi pour faciliter la communication.
+
+## Contraintes techniques
+
+1) Plateforme
+L'application sera une application web compatible avec les navigateurs modernes.
+
+2) Sécurité
+La sécurité des données des utilisateurs, y compris les informations de compte et les statistiques de jeu, sera une priorité. L'utilisation de protocoles sécurisés sera obligatoire.
+
+## Livrables attendus
+Version fonctionnelle de l'application web
+Documentation complète sur l'installation et l'utilisation de l'application
+Codes sources documentés
+
+## Calendrier
+Le projet devra être livré avant le 29/11/2023, avec des jalons intermédiaires pour assurer le suivi du développement.
