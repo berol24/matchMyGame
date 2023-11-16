@@ -3,7 +3,16 @@
 ## Table des matières
 
 - [Présentation du produit](#présentation-du-produit)
-- [Objectif du projet](#objectif-du-projet)
+- [Objectif du projet](#présentation-du-produit)
+- [Fonctionnalités principales](#fonctionnalités-principales)
+- [Contraintes techniques](#contraintes-techniques)
+
+## Introduction
+1) Contexte
+MatchMyGame est une application web visant à faciliter la recherche de partenaires de jeu pour des sessions multijoueurs. Le projet a pour objectif de résoudre le problème des équipes aléatoires en permettant aux utilisateurs de choisir leurs partenaires en fonction de leurs préférences et statistiques de jeu.
+
+2) Objectif
+Le but de ce document est de définir les spécifications et les fonctionnalités nécessaires à la réalisation de l'application MatchMyGame.
 
 ## Présentation du produit
 
@@ -14,9 +23,3 @@ Pour pallier à ce problème, MatchMyGame propose aux utilisateurs de chercher d
 ## Objectif du projet
 
 Nous voulons pouvoir créer un compte et renseigner notre pseudonyme, notre Discord et y mettre nos jeux auxquels nous jouons. Nous voulons pouvoir lier les comptes de nos jeux à l'application. Pour le matching, nous voulons pouvoir filtrer la recherche en fonction du jeu. Une fois la recherche effectuée, nous voulons avoir une liste des joueurs correspondant aux critères demandés. Lorsque nous avons choisi la personne qui nous intéresse, nous voulons pouvoir lui proposer de jouer avec nous et pouvoir accepter une proposition. Une fois une proposition acceptée, afficher le Discord de la personne.
-
-
-
-
-
-tuto
