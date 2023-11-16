@@ -8,6 +8,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@vue/cli-service": "^5.0.8",
     "vue": "^3.3.4"
   },
   "devDependencies": {
