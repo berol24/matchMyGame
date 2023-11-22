@@ -4,14 +4,31 @@ export default {
     data() {
         return {
             items: [
-                { name: 'username 1', image: '/public/images/user.png', tagName: 'Tagname', connect: true },
-                { name: 'username 2', image: '/public/images/user.png', tagName: 'Tagname', connect: false },
-                { name: 'username 3', image: '/public/images/user.png', tagName: 'Tagname', connect: true },
-                { name: 'username 4', image: '/public/images/user.png', tagName: 'Tagname', connect: true },
-                { name: 'username 5', image: '/public/images/user.png', tagName: 'Tagname', connect: false }
-            ]
+                { name: 'username 1', image: '/public/images/user.png', tagName: 'Tagname 1', connect: true, url: "https://www.w3schools.com/" },
+                { name: 'username 2', image: '/public/images/user.png', tagName: 'Tagname 2', connect: false, url: "https://www.youtube.com/" },
+                { name: 'username 3', image: '/public/images/user.png', tagName: 'Tagname 3', connect: true, url: "https://www.youtube.com/" },
+                { name: 'username 4', image: '/public/images/user.png', tagName: 'Tagname 4', connect: true, url: "https://www.w3schools.com/" },
+                { name: 'username 5', image: '/public/images/user.png', tagName: 'Tagname 5', connect: false, url: "https://www.w3schools.com/" }
+            ],
+            itemUser: [
+                { nameUser: 'username', imageUser: '/public/images/user.png', tagNameUser: 'TagnameUser', connect: true, url: "https://www.w3schools.com/" },
+       
+            ],
+
+
+
+
+            titleText: "pseudo",
         };
-    }
+    },
+
+
+    methods: {
+    copierTagname(tagName) {
+   
+      navigator.clipboard.writeText(tagName);
+    },
+  },
 };
 </script>
 
@@ -21,56 +38,68 @@ export default {
 
 
         <p>Connected</p>
+       
         <div class="connected">
+
             <div class="online" v-for="(item, index) in items" :key="index">
+                <a v-bind:href="item.url">
 
+                    <div v-if="item.connect" class="item-connect">
 
-                <div v-if="item.connect" class="item-connect">
+                        <img :src="item.image" alt="Image" class="image-user">
 
-                    <img :src="item.image" alt="Image" class="image-user">
+                        <div class="info-user">
+                            <p class="username">{{ item.name }} <img src="/public/images/green-ellipse.svg" alt=""></p>
+                            <p class="tagName">#{{ item.tagName }} <img src="/public/images/copier.svg" alt=""
+                                    class="copier" @click.prevent="copierTagname(item.tagName)" v-bind:title="titleText">
+                            </p>
+                        </div>
 
-                    <div class="info-user">
-                        <p class="username">{{ item.name }} <img src="/public/images/green-ellipse.svg" alt=""></p>
-                        <p class="tagName">#{{ item.tagName }} <img src="/public/images/copier.svg" alt="" class="copier">
-                        </p>
                     </div>
-
-                </div>
-
+                </a>
             </div>
+
         </div>
 
         <p>Disconnected</p>
         <div class="disconnected">
             <div class="offline" v-for="(item, index) in items" :key="index">
 
+                <a v-bind:href="item.url">
+                    <div v-if="!item.connect" class="item-connect">
 
-                <div v-if="!item.connect" class="item-connect">
+                        <img :src="item.image" alt="Image" class="image-user">
 
-                    <img :src="item.image" alt="Image" class="image-user">
+                        <div class="info-user">
+                            <p class="username">{{ item.name }} <img src="/public/images/red-ellipse.svg" alt=""></p>
+                            <p class="tagName">#{{ item.tagName }} <img src="/public/images/copier.svg" alt=""
+                                    class="copier" @click.prevent="copierTagname(item.tagName)" v-bind:title="titleText">
+                            </p>
+                        </div>
 
-                    <div class="info-user">
-                        <p class="username">{{ item.name }} <img src="/public/images/red-ellipse.svg" alt=""></p>
-                        <p class="tagName">#{{ item.tagName }} <img src="/public/images/copier.svg" alt="" class="copier">
-                        </p>
                     </div>
-
-                </div>
+                </a>
             </div>
 
         </div>
+
+
+        <div class="online" v-for="(item, index) in itemUser" :key="index">
+                <a v-bind:href="item.url">
 
         <div class="item-connect">
 
             <img src="/public/images/image-user-app.svg" alt="image-user-app" class="image-user-app">
 
             <div class="info-user">
-                <p class="username-app">user-name-app</p>
-                <p class="tagName-app">#TagnameUserapp<img src="/public/images/copier.svg" alt="" class="copier">
+                <p class="username-app">{{ item.nameUser }} </p>
+                <p class="tagName-app">#{{ item.tagNameUser }}<img src="/public/images/copier.svg" alt="" class="copier" @click.prevent="copierTagname(item.tagNameUser)" v-bind:title="titleText">
                 </p>
             </div>
 
         </div>
+    </a>
+            </div>
 
     </div>
 </template>
@@ -133,6 +162,11 @@ export default {
     scrollbar-color: transparent transparent;
 }
 
+.connected::-webkit-scrollbar {
+  width: 2px; 
+}
+
+
 .disconnected {
     height: 200px;
     overflow-y: auto;
@@ -140,7 +174,9 @@ export default {
     scrollbar-color: transparent transparent;
 }
 
-
+.disconnected::-webkit-scrollbar {
+  width: 2px; 
+}
 
 
 .image-user {
@@ -189,6 +225,9 @@ export default {
 
 
 }
+.tagName .copier{
+    margin-left: 5px;
+}
 
 .tagName-app {
     color: var(--Platinium, #E0E0E0);
@@ -218,4 +257,6 @@ export default {
     margin-right: 25px;
     margin-top: 10px;
 }
+
+
 </style>  

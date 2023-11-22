@@ -4,15 +4,23 @@ export default {
     data() {
         return {
             items: [
-                { name: 'username 1', image: '/public/images/user.png', tagName: 'Tagname', connect: false },
-                { name: 'username 2', image: '/public/images/user.png', tagName: 'Tagname', connect: true },
-                { name: 'username 3', image: '/public/images/user.png', tagName: 'Tagname', connect: false },
-                { name: 'username 4', image: '/public/images/user.png', tagName: 'Tagname', connect: true },
-                { name: 'username 5', image: '/public/images/user.png', tagName: 'Tagname', connect: true }
+                { name: 'username 1', image: '/public/images/user.png', tagName: 'Tagname 1', connect: false },
+                { name: 'username 2', image: '/public/images/user.png', tagName: 'Tagname 2', connect: true },
+                { name: 'username 3', image: '/public/images/user.png', tagName: 'Tagname 3', connect: false },
+                { name: 'username 4', image: '/public/images/user.png', tagName: 'Tagname 4', connect: true },
+                { name: 'username 5', image: '/public/images/user.png', tagName: 'Tagname 5', connect: true }
             ],
-            url: "/public/images/green-ellipse.svg"
+            url: "/public/images/green-ellipse.svg",
+            titleText: "pseudo",
         }
     },
+
+    methods: {
+    copierTagname(tagName) {
+   
+      navigator.clipboard.writeText(tagName);
+    },
+  },
 
 
 
@@ -24,13 +32,14 @@ export default {
     <div class="user-list">
 
         <div v-for="(item, index) in items" :key="index" class="item">
+
             <img :src="item.image" alt="Image" class="image-user">
 
 
             <div class="info-user">
                 <p v-if="item.connect" class="username">{{ item.name }} <img :src="url" alt=""> </p>
                 <p v-else class="username">{{ item.name }} <img src="/public/images/red-ellipse.svg" alt=""> </p>
-                <p class="tagName">#{{ item.tagName }} <img src="/public/images/copier.svg" alt="" class="copier"></p>
+                <p class="tagName">#{{ item.tagName }} <img src="/public/images/copier.svg" alt="" class="copier" @click.prevent="copierTagname(item.tagName)" v-bind:title="titleText"></p>
             </div>
         </div>
 
@@ -49,7 +58,12 @@ export default {
     overflow-y: auto;
     white-space: nowrap;
     scrollbar-color: transparent transparent;
+    scrollbar-width: thin;
 
+
+}
+.user-list::-webkit-scrollbar {
+  width: 2px; 
 }
 
 .item {

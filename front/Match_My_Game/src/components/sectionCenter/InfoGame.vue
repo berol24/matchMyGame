@@ -15,7 +15,7 @@
                 <button>Action</button>
             </div>
 
-            <button class="suivre"> <img src="/public/images/coeur.svg" alt=""> suivre</button>
+            <a href="#"><button class="suivre"> <img src="/public/images/coeur.svg" alt=""> suivre</button></a>
 
 
 
@@ -109,4 +109,16 @@
     margin-left: 5px;
 
 }
+
+
+.description-game a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.description-game a button {
+    cursor: pointer;
+}
+
+
 </style>  

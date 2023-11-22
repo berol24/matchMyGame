@@ -77,6 +77,9 @@ input {
 
 }
 
+.game-list ul::-webkit-scrollbar {
+  width: 2px; 
+}
 
 
 .game-list ul li:not(li:nth-child(1)) {
