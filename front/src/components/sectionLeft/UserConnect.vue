@@ -4,14 +4,14 @@ export default {
     data() {
         return {
             items: [
-                { name: 'username 1', image: '/public/images/user.png', tagName: 'Tagname 1', connect: true, url: "https://www.w3schools.com/" },
-                { name: 'username 2', image: '/public/images/user.png', tagName: 'Tagname 2', connect: false, url: "https://www.youtube.com/" },
-                { name: 'username 3', image: '/public/images/user.png', tagName: 'Tagname 3', connect: true, url: "https://www.youtube.com/" },
-                { name: 'username 4', image: '/public/images/user.png', tagName: 'Tagname 4', connect: true, url: "https://www.w3schools.com/" },
-                { name: 'username 5', image: '/public/images/user.png', tagName: 'Tagname 5', connect: false, url: "https://www.w3schools.com/" }
+                { name: 'username 1', image: '/public/images/user.png', tagName: 'Tagname 1', connect: true, url: "#" },
+                { name: 'username 2', image: '/public/images/user.png', tagName: 'Tagname 2', connect: false, url: "#" },
+                { name: 'username 3', image: '/public/images/user.png', tagName: 'Tagname 3', connect: true, url: "#" },
+                { name: 'username 4', image: '/public/images/user.png', tagName: 'Tagname 4', connect: true, url: "#" },
+                { name: 'username 5', image: '/public/images/user.png', tagName: 'Tagname 5', connect: false, url: "#" }
             ],
             itemUser: [
-                { nameUser: 'username', imageUser: '/public/images/user.png', tagNameUser: 'TagnameUser', connect: true, url: "https://www.w3schools.com/" },
+                { nameUser: 'username', imageUser: '/public/images/user.png', tagNameUser: 'TagnameUser', connect: true, url: "#" },
        
             ],
 
