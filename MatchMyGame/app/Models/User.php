@@ -7,7 +7,26 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Passport\HasApiTokens;
+// app/User.php
 
+namespace App;
+
+use Illuminate\Contracts\Auth\MustVerifyEmail;
+use Illuminate\Foundation\Auth\User as Authenticatable;
+use Illuminate\Notifications\Notifiable;
+
+class User extends Authenticatable implements MustVerifyEmail
+{
+    use Notifiable;
+
+    // ...
+
+    protected $fillable = [
+        'name', 'email', 'password', 'fortnite_username', 'valorant_username', 'steam_id',
+    ];
+
+    // ...
+}
 class User extends Authenticatable
 {
     use HasApiTokens, HasFactory, Notifiable;
