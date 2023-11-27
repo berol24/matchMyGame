@@ -4,6 +4,8 @@
 
 - [Présentation du produit](#présentation-du-produit)
 - [Objectif du projet](#objectif-du-projet)
+- [Fonctionnalités principales](#fonctionnalités-du-projet)
+- [Contraintes techniques](#contraintes-publiques)
 
 ## Introduction
 1) Contexte
@@ -49,4 +51,4 @@ Documentation complète sur l'installation et l'utilisation de l'application
 Codes sources documentés
 
 ## Calendrier
-Le projet devra être livré avant le ... , avec des jalons intermédiaires pour assurer le suivi du développement.
+Le projet devra être livré avant le 29/11/2023, avec des jalons intermédiaires pour assurer le suivi du développement.
