@@ -166,6 +166,9 @@ export default {
   width: 2px; 
 }
 
+.online a , .offline a{
+    text-decoration: none;
+} 
 
 .disconnected {
     height: 200px;
