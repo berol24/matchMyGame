@@ -53,3 +53,6 @@ networks:
 volumes:
     sail-mysql:
         driver: local
+redis:
+    image: 'redis:alpine'
+    container_name: redis
