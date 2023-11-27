@@ -13,6 +13,3 @@ Route::middleware('auth')->group(function () {
     Route::post('/games/search', [GameController::class, 'startSearch'])->name('games.search');
     Route::post('/games/call', [GameController::class, 'initiateCall'])->name('games.call');
 });
-Route::get('/', function () {
-    return view('welcome');
-});
