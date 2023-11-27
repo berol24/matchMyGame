@@ -3,10 +3,13 @@
 </script>
 
 <template>
- <div class="accueil">   
+   <!-- <div class="accueil">   
     <section-left class="left" />
     <section-center class="center"/>
     <section-right class="right"/>
+ </div> -->
+ <div class="myParameter">   
+  <my-parameter class="parameter"/>
  </div>
 
 </template>
@@ -26,5 +29,7 @@
 .left{
   width: 469px; 
 }
+
+
 
 </style>
