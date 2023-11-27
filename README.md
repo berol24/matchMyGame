@@ -8,13 +8,19 @@
 - [Lancer le projet](#comment-lancer-le-projet)
 
 ## Pourquoi MatcheMyGame
-Le projet a pour objectif de résoudre le problème des équipes aléatoires sur les jeux en équipe lorsque la personne veut jouer en compétition en permettant aux utilisateurs de choisir leurs partenaires en fonction de leurs préférences et statistiques de jeu.
+Le projet vise à résoudre le problème des équipes aléatoires dans les jeux en équipe, en offrant aux utilisateurs la possibilité de choisir leurs coéquipiers en fonction de leurs préférences et de leurs statistiques de jeu, particulièrement lorsqu'ils souhaitent participer à des compétitions.
+
 ## MatchMyGame
-Ce site est un moyen simple et efficace de trouver rapidement des personnes pour former une équipe équilibrée
+Ce site est un moyen simple et efficace de trouver rapidement des personnes pour former une équipe équilibrée.
 ## Notre équipe
-pour la partie frontend nous avons  KUICHEU Berol et Antoine Mahassadi. Pour le backend il y a DIOUF Amadou makhtar et Avidan Benguigui. Charlery Malcolm est asigné au le rôle de lead dev et chef de projet 
+Pour la partie frontend nous avons KUICHEU Berol et MAHASSADI Antoine.
+Pour le backend il y a DIOUF Amadou makhtar et BENGUIGUI Avidan.
+CHARLERY Malcolm est asigné au rôle de lead dev et chef de projet.
+
 ## Quelles technologies ?
-Nous avons choisi pour la partie delation serveur de travailler avec Laravel car nous sommes tous familier au langage PHP. au niveau du relation client nous avons choisit Vuejs car nous avons l'habitude de Reactjs qui est fait pour de gros projet. nous voulions trouver une équivalance pour des travaux moins conséquant. Nous avons choisit de travailler avec des frameworks pour cadrer le projet. Ca nous peermet d'avooir une base solide et des facilités pour travailler.
+Nous avons opté pour Laravel en tant que framework côté serveur, en raison de notre familiarité avec le langage PHP. Pour la partie frontend, nous avons choisi Vue.js, privilégiant une alternative à React.js, qui est souvent utilisé dans des projets plus importants. Le choix de travailler avec des frameworks nous permet de structurer le projet, offrant une base solide et des facilités pour le développement, tout en adaptant notre approche à des travaux de moindre envergure.
+
 ## organisation
-nous travaillons sur un repository github dans lequel nous avons séparer le travail en deux. puisque nous avons un projet frontend et un projet backend nous avons logiquement créer une broche par projet. A partire de la nous prenons comme base soit l'un soit l'autre pour créer d'autres branches. nous faisons une nouvelle branche par tâche ce qui nous permet de faire en suite dess pull request puis finir par tout mettre en cummun dans la branche main à la fin en réglant les conflis un par un a chaque pull riquest.
+Nous collaborons sur un référentiel GitHub, où le travail est organisé en deux parties distinctes : un projet pour le frontend et un autre pour le backend. De manière logique, nous avons créé une branche distincte pour chaque projet. À partir de là, nous utilisons l'une ou l'autre comme base pour créer des branches supplémentaires dédiées à des tâches spécifiques. Cette approche nous permet de créer des pull requests pour chaque tâche individuelle, puis de fusionner l'ensemble dans la branche principale (main) à la fin du processus. Nous gérons les conflits un par un à chaque pull request pour assurer une intégration harmonieuse.
+
 ## Comment lancer le projet
