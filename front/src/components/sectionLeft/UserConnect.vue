@@ -4,28 +4,26 @@ export default {
     data() {
         return {
             items: [
-                { name: 'username 1', image: '/public/images/user.png', tagName: 'Tagname 1', connect: true, url: "#" },
-                { name: 'username 2', image: '/public/images/user.png', tagName: 'Tagname 2', connect: false, url: "#" },
-                { name: 'username 3', image: '/public/images/user.png', tagName: 'Tagname 3', connect: true, url: "#" },
-                { name: 'username 4', image: '/public/images/user.png', tagName: 'Tagname 4', connect: true, url: "#" },
-                { name: 'username 5', image: '/public/images/user.png', tagName: 'Tagname 5', connect: false, url: "#" }
+                { name: 'ShadowRogue', image: '/public/images/user.png', tagName: 'Tagname 1', connect: true, url: "#" },
+                { name: 'BlazeStorm', image: '/public/images/image2.png', tagName: 'Tagname 2', connect: false, url: "#" },
+                { name: 'CyberPhantom', image: '/public/images/image3.png', tagName: 'Tagname 3', connect: true, url: "#" },
+                { name: 'MysticVortex', image: '/public/images/image4.png', tagName: 'Tagname 4', connect: true, url: "#" },
+                { name: 'NebulaReaper', image: '/public/images/image5.png', tagName: 'Tagname 5', connect: false, url: "#" }
             ],
             itemUser: [
-                { nameUser: 'username', imageUser: '/public/images/user.png', tagNameUser: 'TagnameUser', connect: true, url: "#" },
+                { nameUser: 'VenomSniper', imageUser: '/public/images/image5.png', tagNameUser: 'TagnameUser', connect: true, url: "#" },
        
             ],
-
-
-
-
             titleText: "pseudo",
         };
     },
 
+    
+
 
     methods: {
     copierTagname(tagName) {
-   
+        console.log(tagName)
       navigator.clipboard.writeText(tagName);
     },
   },
@@ -51,7 +49,7 @@ export default {
                         <div class="info-user">
                             <p class="username">{{ item.name }} <img src="/public/images/green-ellipse.svg" alt=""></p>
                             <p class="tagName">#{{ item.tagName }} <img src="/public/images/copier.svg" alt=""
-                                    class="copier" @click.prevent="copierTagname(item.tagName)" v-bind:title="titleText">
+                                    class="copier" @click="copierTagname(item.tagName)" title="Copier le nom de joueur">
                             </p>
                         </div>
 
@@ -73,7 +71,7 @@ export default {
                         <div class="info-user">
                             <p class="username">{{ item.name }} <img src="/public/images/red-ellipse.svg" alt=""></p>
                             <p class="tagName">#{{ item.tagName }} <img src="/public/images/copier.svg" alt=""
-                                    class="copier" @click.prevent="copierTagname(item.tagName)" v-bind:title="titleText">
+                                class="copier" @click="copierTagname(item.tagName)" title="Copier le nom de joueur">
                             </p>
                         </div>
 
@@ -93,7 +91,7 @@ export default {
 
             <div class="info-user">
                 <p class="username-app">{{ item.nameUser }} </p>
-                <p class="tagName-app">#{{ item.tagNameUser }}<img src="/public/images/copier.svg" alt="" class="copier" @click.prevent="copierTagname(item.tagNameUser)" v-bind:title="titleText">
+                <p class="tagName-app">#{{ item.tagNameUser }}<img src="/public/images/copier.svg" alt="" class="copier" @click="copierTagname(item.tagNameUser)" title="Copier le nom de joueur">
                 </p>
             </div>
 
