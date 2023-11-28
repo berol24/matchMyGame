@@ -26,7 +26,7 @@ Nous collaborons sur un référentiel GitHub, où le travail est organisé en de
 ## Comment lancer le projet
 Pour faire fonctionner le projet il faut lancer à la fois le server Vue et celui de Laravel. Pour cela, il faut commancer par s'assurer que les dépendances de chaque projet avant de lancer le serveur. pour VueJS il faut executer les commendes :
 
-    nnpm install
+    npm install
     npm run dev
 
 puis pour le projet Laravel dans un nouveau terminal : 
