@@ -26,7 +26,7 @@ class ValorantService
         $response = $this->httpClient->get('players?name=' . $username, ['headers' => $headers]);
         $data = json_decode($response->getBody(), true);
 
-        public function getPlayerData($username)
+        function getPlayerData($username)
         {
             $response = $this->httpClient->get('v1/players?name=' . $username);
             $data = json_decode($response->getBody(), true);
