@@ -1,6 +1,5 @@
 <?php
 
-// app/Http/Controllers/GameAccountController.php
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
@@ -12,7 +11,6 @@ class GameAccountController extends Controller
     {
         $user = $request->user();
 
-        // Vérifie si le compte de jeu est déjà lié
         $existingAccount = GameAccount::where('user_id', $user->id)
             ->where('game_type', $gameType)
             ->where('game_account_id', $gameAccountId)
@@ -22,7 +20,6 @@ class GameAccountController extends Controller
             return response()->json(['message' => 'Le compte de jeu est déjà lié.'], 422);
         }
 
-        // Lie le compte de jeu à l'utilisateur
         GameAccount::create([
             'user_id' => $user->id,
             'game_type' => $gameType,
@@ -32,6 +29,5 @@ class GameAccountController extends Controller
         return response()->json(['message' => 'Compte de jeu lié avec succès'], 200);
     }
 
-    // ... autres méthodes du contrôleur ...
 }
 

@@ -4,7 +4,6 @@ class UserController extends Controller {
     public function getUserInfo($id) {
         $user = User::findOrFail($id);
 
-        // Utilisez les services des APIs de Fortnite, Valorant et CS:GO pour obtenir les informations du joueur
         $fortniteService = new FortniteService();
         $valorantService = new ValorantService();
         $csgoService = new CsgoService();

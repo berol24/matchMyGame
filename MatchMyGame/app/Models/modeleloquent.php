@@ -1,8 +1,6 @@
 <?php
 
-// Modèle User
 class User extends Model {
-    // ...
 
     public function games() {
         return $this->hasMany(UserGame::class);
@@ -13,18 +11,14 @@ class User extends Model {
     }
 }
 
-// Modèle UserGame
 class UserGame extends Model {
-    // ...
 
     public function user() {
         return $this->belongsTo(User::class);
     }
 }
 
-// Modèle Search
 class Search extends Model {
-    // ...
 
     public function user() {
         return $this->belongsTo(User::class);

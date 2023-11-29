@@ -21,7 +21,6 @@ class MatchmakingController extends Controller
         $user = $request->user();
         $user->update(['is_searching' => false]);
 
-        // Ajoute la logique pour arrêter la recherche ici
 
         return response()->json(['message' => 'Recherche de match arrêtée'], 200);
     }
@@ -30,8 +29,6 @@ class MatchmakingController extends Controller
     {
         $user = $request->user();
 
-        // Ajoute la logique pour gérer le match trouvé ici
-        // Cela pourrait inclure l'envoi de notifications, la création de canaux de communication, etc.
 
         return response()->json(['message' => 'Match trouvé avec ' . $matchedUser->username], 200);
     }
