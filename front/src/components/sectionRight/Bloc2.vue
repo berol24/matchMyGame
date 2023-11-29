@@ -2,19 +2,19 @@
     <div class="bloc2">
         <div class="image-user-commun">
             <div class="photo">
-                <img src="/public/images/user.png" class="friend-image" alt="Photo 1">
+                <img src="/public/images/image2.png" class="friend-image" alt="Photo 1">
             </div>
             <div class="photo">
-                <img src="/public/images/jeu.png" class="friend-image" alt="Photo 2">
+                <img src="/public/images/image5.png" class="friend-image" alt="Photo 2">
             </div>
             <div class="photo">
-                <img src="/public/images/user.png" class="friend-image" alt="Photo 3">
+                <img src="/public/images/image4.png" class="friend-image" alt="Photo 3">
             </div>
             <div class="photo">
-                <img src="/public/images/jeu.png" class="friend-image" alt="Photo 4">
+                <img src="/public/images/image2.png" class="friend-image" alt="Photo 4">
             </div>
             <div class="photo">
-                <img src="/public/images/user.png" class="friend-image" alt="Photo 5">
+                <img src="/public/images/image3.png" class="friend-image" alt="Photo 5">
             </div>
         </div>
         <div class="number-friend">

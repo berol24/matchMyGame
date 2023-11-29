@@ -4,11 +4,11 @@ export default {
     data() {
         return {
             items: [
-                { name: 'username 1', image: '/public/images/user.png', tagName: 'Tagname 1', connect: false },
-                { name: 'username 2', image: '/public/images/user.png', tagName: 'Tagname 2', connect: true },
-                { name: 'username 3', image: '/public/images/user.png', tagName: 'Tagname 3', connect: false },
-                { name: 'username 4', image: '/public/images/user.png', tagName: 'Tagname 4', connect: true },
-                { name: 'username 5', image: '/public/images/user.png', tagName: 'Tagname 5', connect: true }
+                { name: 'username 1', image: '/public/images/image4.png', tagName: 'Tagname 1', connect: false },
+                { name: 'username 2', image: '/public/images/image2.png', tagName: 'Tagname 2', connect: true },
+                { name: 'username 3', image: '/public/images/image3.png', tagName: 'Tagname 3', connect: false },
+                { name: 'username 4', image: '/public/images/image5.png', tagName: 'Tagname 4', connect: true },
+                { name: 'username 5', image: '/public/images/image3.png', tagName: 'Tagname 5', connect: true }
             ],
             url: "/public/images/green-ellipse.svg",
             titleText: "pseudo",

@@ -7,8 +7,6 @@
             <span class="pseudo-name">#Kratos92</span>
             <img src="/public/images/copier.svg" alt="" class="copier">
         </div>
-
-
     </div>
 </template>
 

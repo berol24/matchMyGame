@@ -7,6 +7,8 @@
     <section-left class="left" />
     <section-center class="center"/>
     <section-right class="right"/>
+    <!-- <my-parameter class="parameter"/> -->
+    
  </div>
 
 </template>
@@ -29,6 +31,12 @@
   width: 469px; 
 }
 
+.parameter{
 
+width: 1440px;
+height: 832px;
+padding: 8px;
+background: var(--black, #000);
+}
 
 </style>
